@@ -1,0 +1,25 @@
+
+ /*  ****IMPORTANT
+ 
+The below wasn't here by default.  You need to reset the styling for any of your prohects because every web browser comes with 
+default styling that in our case (-webkit-padding-start: 40px;) was affecting our orderbook ul elements by creating
+a padding space from the left side of the ul element.  What we have to do is reset our default browser css settings
+with the below css definitions.  Doing this resets everything and lets you customize the css styling to your desire
+without interacting with it.
+
+ 
+ */
+
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+.OrderBookText   /* This is for the OrderBook Text*/
+{
+    color: #90269c;
+}
+
+  
+  /* your styling goes below*/
