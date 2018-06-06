@@ -2,13 +2,17 @@ import React from 'react';
 import { Paper, Grid, Typography } from '@material-ui/core';
 
 
-export default (props) =>
+export default ({clickedPrice}) =>
 {
+
+    const message = "Potential Sell Price: "
+    const price = clickedPrice;
+
     return(
         <Paper>
-            <Typography>
-                Potential Sell Price
-            </Typography>
+            
+            {message}  {price}
+            
         </Paper>
     )
     
