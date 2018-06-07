@@ -1,6 +1,7 @@
 import React from 'react';
 import { Paper, Grid, Typography } from '@material-ui/core';
 
+// CHILD COMPONENT OF MIDDLE_COLUMN CONTAINER
 
 export default ({clickedPrice}) =>
 {

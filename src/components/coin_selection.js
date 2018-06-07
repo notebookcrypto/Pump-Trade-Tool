@@ -11,6 +11,7 @@ class CoinSelection extends Component
         
             <div> 
                 
+                COIN SELECTION
 
             </div>
 
@@ -20,8 +21,6 @@ class CoinSelection extends Component
 
     }
 
-
-
-
-
 }
+
+export default CoinSelection;

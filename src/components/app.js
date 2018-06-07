@@ -8,9 +8,6 @@ import MiddleColumn from '../layout/middle_column';
 export default class App extends Component {
 
 
-
-
-
   render() {
     return (
       <div>

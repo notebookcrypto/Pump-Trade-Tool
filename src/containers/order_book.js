@@ -12,19 +12,11 @@ class OrderBook extends Component
     {
         super(props);
 
-        this.state = { prices: [], clickedPrice: ''};
-
-        this.priceClicked = this.priceClicked.bind(this);
-
+        // empty prices array that we will be filling up either through Binance Api calls or from our static prices_reducers list
+        // which we have mapped below.  Remember you do not import reducers, you map your class props to the reducers state.
+        this.state = { prices: []}; 
     }
 
-
-    priceClicked(event, price)
-    {
-        this.setState({ clickedPrice: price });
-        <PotentialSellPrice clickedPrice = {54} />
-        console.log(price);
-    }
 
 
     renderList()
@@ -37,7 +29,9 @@ class OrderBook extends Component
                         style = {{ paddingTop: 10, marginTop: 10, marginBottom: 10, margin: 'auto'}}
                     >
                         {/* *** IMPORTANT  Whenever we use onCLick we need to use ES6 syntax and use a fat arrow to pass the function we want to pass onClick
-                                If not, then this function will get called at the start of the applications rendering regardless if anything is clicked or not! */}
+                                If not, then this function will get called at the start of the applications rendering regardless if anything is clicked or not! 
+                                Here we are calling the ActionCreator selectedPrice which is also obviously a function
+                                */}
                         <ul onClick = { () => this.props.selectedPrice(price.price) } className = 'OrderBookText' style = {{margin: 'auto', textAlign: 'center', }}>
                             { price.price } 
                         </ul>
