@@ -16,10 +16,24 @@ without interacting with it.
     padding: 0;
   }
 
-.OrderBookText   /* This is for the OrderBook Text*/
+.SellOrderText   /* This is for the Sell Order Text*/
 {
-    color: #90269c;
+    color: #f2294a;
 }
 
-  
+.BuyOrderText   /* This is for the Buy Order Text*/
+{
+    color: #009129;
+}
+
+
+.CurrentPrice
+{
+  text-align: center;
+}
+
+
+
+
+
   /* your styling goes below*/

@@ -7,7 +7,7 @@ const Header = () => {
       <Toolbar>
         {/* <IconButton />  // This shit is for an Icon button on the Right Top side of Header */}
 
-        <Typography variant="display1" color='inherit'>Header</Typography>
+        <Typography variant="display1" color='inherit'>Crypto Trading Tool v.0.01</Typography>
       </Toolbar>
     </AppBar>
   );

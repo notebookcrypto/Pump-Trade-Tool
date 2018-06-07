@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
-import OrderBook from '../containers/order_book';
 import PotentialSellPrice from './potential_sell_price';
 import Header from '../layout/header';
 import { Grid, Paper, Typography } from '@material-ui/core';
+import LeftColumn from '../layout/left_column';
 import MiddleColumn from '../layout/middle_column';
+import RightColumn from '../layout/right_column';
+
 
 export default class App extends Component {
 
@@ -16,7 +18,7 @@ export default class App extends Component {
 
         <Grid container >
           <Grid item xs>
-            Left Item
+            <LeftColumn />
           </Grid>
 
           <Grid item xs>
@@ -24,7 +26,7 @@ export default class App extends Component {
           </Grid>
 
           <Grid item xs>
-            <OrderBook />
+            <RightColumn />
           </Grid>
         </Grid>
 

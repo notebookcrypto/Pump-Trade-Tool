@@ -1,11 +1,13 @@
 import { combineReducers } from 'redux';
-import Prices from './prices_reducer';
+import SellPrices from './sell_prices_reducer';
+import BuyPrices from './buy_prices_reducer';
 import SelectedPrice from './selected_price_reducer';
 
 const rootReducer = combineReducers({
 
   selectedPrice: SelectedPrice,
-  prices: Prices
+  sellPrices: SellPrices,
+  buyPrices: BuyPrices
 });
 
 export default rootReducer;

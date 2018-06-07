@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import { Paper, Grid, Typography } from '@material-ui/core';
 
 class CoinSelection extends Component
 {
@@ -9,11 +9,11 @@ class CoinSelection extends Component
 
         return (
         
-            <div> 
+            <Paper> 
                 
                 COIN SELECTION
 
-            </div>
+            </Paper>
 
         
         );

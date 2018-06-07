@@ -3,6 +3,7 @@ import PotentialSellPrice from '../components/potential_sell_price';
 import { Grid, Paper, Typography } from '@material-ui/core';
 import { connect } from 'react-redux';
 import CoinSelection from '../components/coin_selection';
+import Profit from '../components/potential_profit';
 
 class MiddleColumn extends Component
 {
@@ -22,6 +23,10 @@ class MiddleColumn extends Component
             <Fragment >
                 <Grid item md >
                     <CoinSelection />
+                </Grid>
+
+                <Grid item md >
+                    <Profit />
                 </Grid>
 
                 <Grid item md >
