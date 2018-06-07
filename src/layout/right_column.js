@@ -38,6 +38,8 @@ class RightColumn extends Component
     {
         return(
            <Grid container direction = 'column'   > 
+                {/* IMPORTANT **** Look at how he below function is being sent from this parent component to the children components.  
+                  Had to google this so refer back to it if the function being passed isnt defined or giving an error*/}
                <SellOrders sellPrices = {this.props.sellPrices} orderBookCallBack = { this.OrderBookCallBack.bind(this) } />
                <CurrentPrice />
                <BuyOrders buyPrices = {this.props.buyPrices} orderBookCallBack = { this.OrderBookCallBack.bind(this) }/>
@@ -54,6 +56,7 @@ function mapStateToProps(state)
     return{
         sellPrices: state.sellPrices,
         buyPrices: state.buyPrices
+        // TODO:  make a reducer for the current price and map it to state that gets passed to our currentPrice child above in our render function.
     };
 }
 
